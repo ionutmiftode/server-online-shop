@@ -7,7 +7,7 @@ splittedClientPath.pop();
 const clientPath = splittedClientPath.join('\\');
 
 app.get('/', (request, response) => {
-  	response.sendFile(clientPath + '/index.html');
+  	response.sendFile(clientPath + '/server-online-shop/ind.html');
 });
 
 app.get('/products', (request, response) => {
