@@ -14,6 +14,10 @@ app.get('/productsPage.html', (request, response) => {
     response.sendFile(clientPath + '/html/productsPage.html');
 });
 
+app.get('/bag.html', (request, response) => {
+    response.sendFile(clientPath + '/html/bag.html');
+});
+
 app.get('/css/style.css', (request, response) => {
     response.sendFile(clientPath + '/css/style.css');
 });
@@ -40,6 +44,10 @@ app.get('/js/productsPage.js', (request, response) => {
 
 app.get('/js/bag.js', (request, response) => {
     response.sendFile(clientPath + '/js/bag.js');
+});
+
+app.get('/js/bagPage.js', (request, response) => {
+    response.sendFile(clientPath + '/js/bagPage.js');
 });
 
 app.get('/js/slider.js', (request, response) => {
